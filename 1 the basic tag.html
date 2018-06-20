@@ -1,0 +1,48 @@
+<!--html是一种超文本标记语言-->
+<html>
+<!--所有可见的页面内容都包含在body的开闭标签之间-->
+<body>
+  <!--h开闭标签之间的文字会被显示为标题和副标题，会放大文本，h1~h6之前字体逐渐变小-->
+  <h1>The Brown Bear</h1>
+  <!--div是常用的块级元素，用于文档布局，div可以互相嵌套；id是他的属性，属性值为introduction-->
+  <div id="introduction">
+    <h2>About Brown Bears</h2>
+    <!--p开闭标签之间的文本显示为段落，是一个块级元素，但还不可以互相嵌套；span是行内的小块，属于内联元素-->
+    <!--em和strong标签的作用是强调文本，em体现为倾斜，strong体现为加深（加粗）-->
+    <!--br/标签表示换行，只有闭合而且/在后面-->
+    <p>The brown bear (<em>Ursus arctos</em>) is native to parts of northern Eurasia and North America. Its conservation status is currently <strong>Least Concern</strong>.<br /><br /> There are many subspecies within the brown bear species, including the Atlas bear and the Himalayan brown bear.</p>
+    <h3>Species</h3>
+    <!--ul是无序列表，每一列内容都写在<li>开闭标签之间，体现为被公告的感觉-->
+    <ul>
+      <li>Arctos</li>
+      <li>Collarus</li>
+      <li>Horribilis</li>
+      <li>Nelsoni (extinct)</li>
+    </ul>
+    <h3>Features</h3>
+    <p>Brown bears are not always completely brown. Some can be reddish or yellowish. They have very large, curved claws and huge paws. Male brown bears are often 30% larger than female brown bears. They can range from 5 feet to 9 feet from head to toe.</p>
+  </div>
+  <div id="habitat">
+    <h2>Habitat</h2>
+    <h3>Countries with Large Brown Bear Populations</h3>
+    <!--ol是有序列表，每一列内容都写在<li>开闭标签之间，体现为被编号的感觉-->
+    <ol>
+      <li>Russia</li>
+      <li>United States</li>
+      <li>Canada</li>
+    </ol>
+    <h3>Countries with Small Brown Bear Populations</h3>
+    <p>Some countries with smaller brown bear populations include Armenia, Belarus, Bulgaria, China, Finland, France, Greece, India, Japan, Nepal, Poland, Romania, Slovenia, Turkmenistan, and Uzbekistan.</p>
+  </div>
+  <div id="media">
+    <h2>Media</h2>
+    <!--img和video可以通过链接添加图像和视频文件，用src属性添加url;img只有一个标签，末尾加上/；video是开闭标签，中间的文本为视频加载失败等显示的文字内容-->
+    <!--alt标签的意思为点击在图片上时的文字提示，一般为对图像的描述-->
+    <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/web101-image_brownbear.jpg" alt="A Brown Bear"/>
+    <!--width为宽度，height为高度，controls属性为控制按钮控件（包含播放，暂停，切换等）-->
+    <video src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-1/lesson-2/htmlcss1-vid_brown-bear.mp4" width="320" height="240" controls>
+      Video not supported
+    </video>
+  </div>
+</body>
+</html>
