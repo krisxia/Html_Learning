@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ship To It - Company Packing List</title>
+  <!--link 定义文档与外部资源之间的关系，只能存在于head里面 href属性是链接位置，rel是当前文档与链接文档之间的关系，type是被链接文档的mime类型-->
+  <!--Mime：多用互联网邮件扩展类型，是设定某种扩展名的文件用一种应用程序来打开的方式类型 eg：.html/.htm的Mime类型是text/html-->
+  <link href="https://fonts.googleapis.com/css?family=Lato: 100,300,400,700|Luckiest+Guy|Oxygen:300,400" rel="stylesheet">
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <!--添加了样式名为nav..样式的无序列表-->
+  <ul class="navigation">
+    <li><img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-9/htmlcss1-img_logo-shiptoit.png" height="20px;"></li>
+    <li class="active">Action List</li>
+    <li>Profiles</li>
+    <li>Settings</li>
+  </ul>
+
+  <div class="search">&nbspSearch the table</div>
+  
+  <!--table 创建一个表-->
+  <table>
+    <!--thead 表的头部（页眉）-->
+    <thead>
+      <!--tr元素为表格添加行-->
+      <tr>
+        <!--th元素为表格添加标题 <th scope="col">可添加列标题，同理row添加行标题-->
+        <th>Company Name</th>
+        <th>Number of Items to Ship</th>
+        <th>Next Action</th>
+      </tr>
+    </thead>
+    <!--tbody 表的主体-->
+    <tbody>
+      <tr>
+        <!--td元素为表格中的行添加数据-->
+        <td>Adam's Greenworks</td>
+        <td>14</td>
+        <td>Package Items</td>
+      </tr>
+        <!--colspan和rowspan属性可以用跨越列和行 eg：<td colspan=“2”>111</td> 111就占用了2列的宽度-->
+      <tr>
+        <td>Davie's Burgers</td>
+        <td>2</td>
+        <td>Send Invoice</td>
+      </tr>
+      <tr>
+        <td>Baker's Bike Shop</td>
+        <td>3</td>
+        <td>Send Invoice</td>
+      </tr>
+      <tr>
+        <td>Miss Sally's Southern</td>
+        <td>4</td>
+        <td>Ship</td>
+      </tr>
+      <tr>
+        <td>Summit Resort Rentals</td>
+        <td>4</td>
+        <td>Ship</td>
+      </tr>
+      <tr>
+        <td>Strike Fitness</td>
+        <td>1</td>
+        <td>Enter Order</td>
+      </tr>
+    </tbody>
+    <!--tfoot 表的脚注（页脚）-->
+    <tfoot>
+      <td>Total</td>
+      <td>28</td>
+      <td>&nbsp</td>
+    </tfoot>
+  </table>
+
+</body>
+</html>
